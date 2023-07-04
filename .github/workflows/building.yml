@@ -10,3 +10,16 @@ jobs:
               run: yarn install
             - name: Build application
               run: yarn build
+            - name: Upload Builded project
+              uses: actions/upload-artifact@v3
+              with: 
+                path: build
+                name: builded-project
+    dowload:
+        needs: build
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Download builded project
+              uses: actions/download-artifact@v3
+              with: 
+                name: builded-project
