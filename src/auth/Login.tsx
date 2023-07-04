@@ -98,7 +98,7 @@ const Login: React.FC = () => {
         } else {
             toast.error("Неправильные данные")
         }
-    }, [])
+    }, [setUser])
     return <AuthContainerWrapper>
         <AuthContainer>
             <AuthTitle>

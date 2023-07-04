@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useCallback } from 'react';
 import { Global } from '@emotion/react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import AuthLayout from './auth/AuthLayout';
 import PagesWrapper from './PagesWrapper/PagesWrapper';

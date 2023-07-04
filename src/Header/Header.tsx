@@ -9,12 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { Badge, Drawer, List, ListItemButton, ListItemIcon, ListItemText, Stack, useTheme } from '@mui/material';
-import { AnnouncementRounded, DarkMode, Drafts, LightMode, MailOutline, Notifications, Settings } from '@mui/icons-material';
-import { useNavigate } from 'react-router-dom';
+import { Badge, Drawer, useTheme } from '@mui/material';
+import { DarkMode, LightMode, MailOutline, Notifications } from '@mui/icons-material';
 import AppMenu from '../Menu/AppMenu';
-import ComponentButton from '../component/ComponentButton';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -40,7 +37,6 @@ const Logo: React.FC = () => {
 
 const MobileMenu: React.FC = () => {
   const [showDrawler, setShowDrawler] = useState(false)
-  const navigate = useNavigate()
   return <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
     <IconButton
       size="large"
