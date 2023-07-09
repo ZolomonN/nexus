@@ -5,15 +5,14 @@ import { useLocation, useNavigate } from "react-router-dom"
 
 
 const pages = [
-    { title: "News", link: "/news", icon: <AnnouncementRounded /> },
-    { title: "Drafts", link: "/drafts", icon: <Drafts /> }
+    { title: "Новости", link: "/news", icon: <AnnouncementRounded /> },
+    { title: "Адреса", link: "/addresses", icon: <Drafts /> }
 ]
 
 const AppMenu: React.FC = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const theme = useTheme()
-    console.log(theme)
     return <Box sx={{
         position: { xs: "relative", md: "fixed" },
         width: { xs: 200, lg: 280 },

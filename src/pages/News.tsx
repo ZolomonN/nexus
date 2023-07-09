@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2/Grid2"
 import React from "react"
-import ComponentCard from "./ComponentCard"
+import ComponentCard from "../component/ComponentCard"
 
 const News: React.FC = () => {
     return <Grid container>

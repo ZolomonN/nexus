@@ -9,7 +9,7 @@ const PagesWrapper: React.FC<{ switchMode: () => void }> = ({ switchMode }) => {
     const mode = useTheme()
     return <Box sx={{backgroundColor: mode.palette.background.default}}>
         <Header switchMode={switchMode} />
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{minHeight: "calc(100vh - 48px)"}}>
             <Grid item sx={{
                 display: { xs: 'none', md: "block" },
                 width: { md: 200, lg: 280 }
